@@ -2,6 +2,25 @@
 
 An open agent skill following the [Agent Skills standard](https://agentskills.io) to teach, operate, and troubleshoot **Entire** (`entire.com` / `entire.io`) — the AI-native Git platform and forge for human + AI agent collaboration.
 
+## Installation via skills.sh (Recommended)
+
+You can install this skill into any project or globally across all supported AI coding agents (Antigravity, Claude Code, Cursor, Codex, Cline, etc.) using the [`skills.sh`](https://skills.sh) CLI:
+
+```bash
+# Install to your current project
+npx skills add atpaawej/learn-entire
+
+# Or install globally across all agents
+npx skills add atpaawej/learn-entire -g
+```
+
+To preview available skills before installing:
+```bash
+npx skills add atpaawej/learn-entire --list
+```
+
+---
+
 ## Directory Structure
 ```text
 learn-entire/
@@ -20,15 +39,12 @@ learn-entire/
     └── sample-settings.json          # Example .entire/settings.json configuration
 ```
 
-## How to Install / Use in Agents
-
-### In Antigravity / Claude Code / Agent Platforms
-Copy the `learn-entire` directory into your project's `.agents/skills/` or your global skills directory:
+## Manual Installation (Alternative)
 ```bash
-cp -r learn-entire ~/.gemini/config/skills/
-# or in a project repository
-mkdir -p .agents/skills
-cp -r learn-entire .agents/skills/
-```
+# Clone directly into your personal agent skills
+git clone https://github.com/atpaawej/learn-entire.git ~/.gemini/config/skills/learn-entire
 
-Whenever the agent is asked about Entire, `entire://` remotes, checkpoints, `entire why`, trails, or debugging session hooks, the agent automatically activates this skill.
+# Or in a project repository
+mkdir -p .agents/skills
+git clone https://github.com/atpaawej/learn-entire.git .agents/skills/learn-entire
+```
