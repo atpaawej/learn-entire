@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.entire.io/schemas/settings.json",
+  "enabled": true,
+  "checkpoints": {
+    "primary": {
+      "type": "git-refs"
+    }
+  },
+  "summary_generation": {
+    "provider": "antigravity"
+  },
+  "telemetry": true
+}
